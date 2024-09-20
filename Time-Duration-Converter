@@ -1,0 +1,14 @@
+# أول حاجة هقولة أديني عدد الثواني و خزينة في متغير 
+seconds = int(input("Enter the duration in seconds:\n"))
+
+# هعمل متغير اقسم فيه الثواني علي الساعات 
+hours = seconds // 3600
+
+# متغير أشوف فيه باقي قسمة الثواني علي 3600 واحسب الدقائق
+minutes = (seconds % 3600) // 60
+
+# متغير أشوف فية باقي قسمة الثواني بعد حساب الساعات والدقائق
+remaining_seconds = seconds % 60
+
+# هطبع للمستخدم الرسالة النهائية 
+print(f"The duration is: {hours} hours, {minutes} minutes, and {remaining_seconds} seconds.")
